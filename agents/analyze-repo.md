@@ -52,3 +52,11 @@ Total: ≤ 40% of context window
 Token usage estimated based on:
 - Average 500–1000 tokens per file
 - Hard cap on number of files loaded
+
+## Workflow
+
+1. Run build_index.py
+2. Run summarize_files.py
+3. Agent loads index files
+4. Agent selects relevant files
+5. Agent generates structured output
