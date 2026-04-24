@@ -1,0 +1,24 @@
+    build_index.py
+    summarize_files.py
+
+## External Scripts (Out-of-LLM Processing)
+
+The following scripts handle deterministic tasks:
+
+### build_index.py
+- Scans repository
+- Generates file_index.json
+- Records file paths and metadata
+
+### summarize_files.py
+- Reads files
+- Generates short summaries
+- Stores in summary_index.json
+
+### Why Scripts Are Used:
+- Faster than LLM
+- No token cost
+- Deterministic results
+
+### Agent Usage:
+The agent assumes these scripts have already been run before analysis.
