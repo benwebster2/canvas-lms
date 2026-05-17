@@ -15,8 +15,29 @@ export { useAudioPlayer } from './hooks/useAudioPlayer'
 // Types
 export type {
   MusicTrack,
+  ReadonlyMusicTrack,
   QuickLink,
+  ReadonlyQuickLink,
   PlayerState,
+  ReadonlyPlayerState,
+  PlaybackMode,
+  QuickLinksSelectorState,
   StudyStreamConfig,
-  QuickLinksSelectorState
+  OnTrackPlay,
+  OnTrackPause,
+  OnTrackStop,
+  OnProgressChange,
+  OnVolumeChange,
+  OnPlaybackModeChange,
+  OnPlayerError,
+  OnQuickLinkClick,
+  OnQuickLinksUpdate,
+  PlayerAction,
+  QuickLinksAction
 } from './types'
+
+// Enums
+export { PlaybackMode } from './types'
+
+// Utility Functions
+export { isValidMusicTrack, isValidQuickLink } from './types'
