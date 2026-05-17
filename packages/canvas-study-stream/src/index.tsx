@@ -11,6 +11,7 @@ export { TaskbarWidget, type TaskbarWidgetProps } from './components/TaskbarWidg
 
 // Hooks
 export { useAudioPlayer } from './hooks/useAudioPlayer'
+export { useQuickLinks } from './hooks/useQuickLinks'
 
 // Types
 export type {
