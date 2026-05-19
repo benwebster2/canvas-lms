@@ -1,0 +1,396 @@
+/**
+ * QuickLinksSelector Component Styles
+ * 
+ * Responsive and accessible styles for the quick links selector.
+ * Follows Canvas LMS design system.
+ */
+
+.quick-links-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0.75rem 0;
+}
+
+/* Links List */
+.quick-links-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.quick-links-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.2s ease;
+  padding: 0.25rem;
+  border-radius: 4px;
+}
+
+.quick-links-item:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Individual Link Button */
+.quick-link-button {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background-color: #f5f5f5;
+  border: 1px solid #d3d3d3;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #333;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.quick-link-button:hover {
+  background-color: #e8e8e8;
+  border-color: #999;
+  text-decoration: none;
+}
+
+.quick-link-button:active {
+  background-color: #ddd;
+  border-color: #666;
+}
+
+.quick-link-button:focus-visible {
+  outline: 2px solid #0066cc;
+  outline-offset: 2px;
+}
+
+.quick-link-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.quick-link-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.25rem;
+  height: 1.25rem;
+  font-size: 0.75rem;
+}
+
+.quick-link-label {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.quick-link-external-icon {
+  flex-shrink: 0;
+  opacity: 0.6;
+  font-size: 0.75rem;
+  margin-left: 0.25rem;
+}
+
+/* Remove Button */
+.quick-link-remove {
+  flex-shrink: 0;
+  padding: 0.25rem 0.5rem;
+  background-color: transparent;
+  border: 1px solid #d3d3d3;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #999;
+  font-size: 1rem;
+  line-height: 1;
+  transition: all 0.2s ease;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quick-link-remove:hover {
+  background-color: #fee;
+  border-color: #f00;
+  color: #f00;
+}
+
+.quick-link-remove:focus-visible {
+  outline: 2px solid #0066cc;
+  outline-offset: 2px;
+}
+
+/* Empty State */
+.quick-links-empty {
+  padding: 1rem;
+  text-align: center;
+  color: #999;
+  font-size: 0.875rem;
+  background-color: #fafafa;
+  border: 1px dashed #d3d3d3;
+  border-radius: 4px;
+  margin: 0.5rem 0;
+}
+
+.quick-links-empty p {
+  margin: 0;
+}
+
+/* Add Link Actions */
+.quick-links-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.quick-links-add-button {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  background-color: #0066cc;
+  border: 1px solid #0066cc;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.quick-links-add-button:hover:not(:disabled) {
+  background-color: #0052a3;
+  border-color: #0052a3;
+}
+
+.quick-links-add-button:active:not(:disabled) {
+  background-color: #003d7a;
+  border-color: #003d7a;
+}
+
+.quick-links-add-button:focus-visible {
+  outline: 2px solid #0066cc;
+  outline-offset: 2px;
+}
+
+.quick-links-add-button:disabled {
+  background-color: #ccc;
+  border-color: #ccc;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Add Link Form */
+.quick-links-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background-color: #fafafa;
+  border: 1px solid #d3d3d3;
+  border-radius: 4px;
+}
+
+.quick-links-error {
+  padding: 0.5rem 0.75rem;
+  background-color: #fee;
+  border: 1px solid #fcc;
+  border-radius: 3px;
+  color: #c33;
+  font-size: 0.8125rem;
+  text-align: center;
+}
+
+.quick-links-input {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d3d3d3;
+  border-radius: 3px;
+  font-size: 0.875rem;
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+
+.quick-links-input:focus {
+  outline: none;
+  border-color: #0066cc;
+  box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.1);
+}
+
+.quick-links-input::placeholder {
+  color: #999;
+}
+
+.quick-links-form-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.quick-links-save-button,
+.quick-links-cancel-button {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d3d3d3;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.quick-links-save-button {
+  background-color: #0066cc;
+  color: white;
+  border-color: #0066cc;
+}
+
+.quick-links-save-button:hover {
+  background-color: #0052a3;
+  border-color: #0052a3;
+}
+
+.quick-links-save-button:active {
+  background-color: #003d7a;
+  border-color: #003d7a;
+}
+
+.quick-links-cancel-button {
+  background-color: white;
+  color: #333;
+}
+
+.quick-links-cancel-button:hover {
+  background-color: #f5f5f5;
+  border-color: #999;
+}
+
+.quick-links-cancel-button:active {
+  background-color: #e8e8e8;
+}
+
+.quick-links-save-button:focus-visible,
+.quick-links-cancel-button:focus-visible {
+  outline: 2px solid #0066cc;
+  outline-offset: 2px;
+}
+
+/* Info Text */
+.quick-links-info {
+  padding: 0.5rem 0.75rem;
+  text-align: right;
+  font-size: 0.75rem;
+  color: #999;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  .quick-links-selector {
+    gap: 0.75rem;
+    padding: 0.5rem 0;
+  }
+
+  .quick-links-form {
+    padding: 0.5rem;
+    gap: 0.375rem;
+  }
+
+  .quick-link-button {
+    padding: 0.375rem 0.5rem;
+    font-size: 0.8125rem;
+  }
+
+  .quick-link-label {
+    min-width: 0;
+  }
+
+  .quick-links-input {
+    padding: 0.375rem 0.5rem;
+    font-size: 0.8125rem;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .quick-links-selector {
+    color: #e0e0e0;
+  }
+
+  .quick-link-button {
+    background-color: #333;
+    border-color: #555;
+    color: #e0e0e0;
+  }
+
+  .quick-link-button:hover {
+    background-color: #444;
+    border-color: #777;
+  }
+
+  .quick-link-button:active {
+    background-color: #555;
+    border-color: #888;
+  }
+
+  .quick-links-item:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+
+  .quick-link-remove {
+    border-color: #555;
+    color: #888;
+  }
+
+  .quick-link-remove:hover {
+    background-color: #552222;
+    border-color: #ff6666;
+    color: #ff6666;
+  }
+
+  .quick-links-empty {
+    background-color: #222;
+    border-color: #444;
+    color: #888;
+  }
+
+  .quick-links-form {
+    background-color: #222;
+    border-color: #444;
+  }
+
+  .quick-links-error {
+    background-color: #552222;
+    border-color: #884444;
+    color: #ffaaaa;
+  }
+
+  .quick-links-input {
+    background-color: #333;
+    border-color: #555;
+    color: #e0e0e0;
+  }
+
+  .quick-links-input::placeholder {
+    color: #777;
+  }
+
+  .quick-links-input:focus {
+    border-color: #0066cc;
+    box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.2);
+  }
+
+  .quick-links-cancel-button {
+    background-color: #333;
+    color: #e0e0e0;
+    border-color: #555;
+  }
+
+  .quick-links-cancel-button:hover {
+    background-color: #444;
+    border-color: #777;
+  }
+}
