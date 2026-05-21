@@ -1,0 +1,4 @@
+Host canvas-lms
+    HostName 44.202.201.23
+    IdentityFile ""C:\College files\canvas-lms\hidden\canvas-lms-key.pem""
+    User ubuntu
