@@ -31,3 +31,5 @@ Automated tests can only be skipped under the following strict conditions:
 # Guardrails
 * **No Code-Bypassing:** Never mark an application behavior change as "Done" without a corresponding automated test.
 * **Data Privacy:** Absolutely no hardcoded API tokens, stream keys, or environment secrets are permitted in test files, codebases, or test execution logs.
+
+//Let's go//
