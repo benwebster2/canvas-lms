@@ -1,5 +1,5 @@
 import React from 'react'
-import { MusicPlayer } from './MusicPlayer'
+import { MusicPlayer } from './AmbientMusic'
 import { QuickLinksSelector } from './QuickLinksSelector'
 
 /**

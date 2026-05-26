@@ -5,7 +5,7 @@
  */
 
 // Components
-export { MusicPlayer, type MusicPlayerProps } from './components/MusicPlayer'
+export { MusicPlayer, type MusicPlayerProps } from './components/AmbientMusic'
 export { QuickLinksSelector, type QuickLinksSelectorProps } from './components/QuickLinksSelector'
 export { TaskbarWidget, type TaskbarWidgetProps } from './components/TaskbarWidget'
 
